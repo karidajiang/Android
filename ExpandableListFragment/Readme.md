@@ -111,7 +111,6 @@ by user interaction with the UI.
 	* Extends BaseExpandableListAdapter
 
 	* Member Variables
-	
 	~~~
 	private Context _context;
 	
@@ -126,7 +125,6 @@ by user interaction with the UI.
 	~~~
 
 	* Initialization
-	
 	~~~
 	public ExpandableListAdapter(Context context, List<String> listDataHeader,
             HashMap<String, List<String>> listChildData) {
@@ -182,7 +180,6 @@ by user interaction with the UI.
 	~~~
 
 	* Overriding funcitons
-	
 	~~~
 	@Override
     public View getChildView(int groupPosition, final int childPosition,
@@ -265,7 +262,6 @@ by user interaction with the UI.
 
 
 	* Helper function to change the boolean data
-	
 	~~~
 	public void setParentCheckBox(final int groupPosition){
     	Boolean b = this._checkListParent.get(groupPosition);
@@ -285,7 +281,6 @@ by user interaction with the UI.
 * **explist.xml* in res/layout/
 
 	* Create an *ExpandableListView* object in the UI with id *lvExp*
-	
 	~~~
 	<?xml version="1.0" encoding="utf-8"?>
 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -306,7 +301,6 @@ by user interaction with the UI.
 * **ExpListFragment.java*
 
 	* Member Variable
-	
 	~~~
 	// reference to the ExpandableListAdapter
 	ExpandableListAdapter listAdapter;
@@ -320,7 +314,6 @@ by user interaction with the UI.
 	~~~
 	
 	* Initialize Data and *ExpandableListAdapter*
-	
 	~~~
 	public View onCreateView(LayoutInflater inflater, 
     		ViewGroup container, Bundle savedInstanceState) {
@@ -346,7 +339,6 @@ by user interaction with the UI.
 	~~~
 	
 	* prepareListData() funciton 
-	
 	~~~
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
@@ -393,7 +385,6 @@ by user interaction with the UI.
 * **activity_main.xml** in res/layout/
 
 	* Change it to a FrameLayout with id *fragment_container*
-	
 	~~~
 	<?xml version="1.0" encoding="utf-8"?>
 	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -407,14 +398,12 @@ by user interaction with the UI.
 	* Extends FragmentActivity
 
 	* Member Vairable:
-	
 	~~~
 	// reference to the fragment
 	ExpListFragment labelfrag;
 	~~~
 
 	* Initialize the reference to *ExpListFragment* 
-	
 	~~~
     protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
