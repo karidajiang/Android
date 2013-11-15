@@ -1,4 +1,3 @@
-
 ExpandableList with Checkbox in Android
 ------------
 
@@ -111,7 +110,7 @@ by user interaction with the UI.
 	* Extends BaseExpandableListAdapter
 
 	* Member Variables
-	~~~
+	~~~c++
 	private Context _context;
 	
 	// Store Data
