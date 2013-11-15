@@ -1,4 +1,3 @@
-
 ExpandableList with Checkbox in Android
 ------------
 
@@ -126,13 +125,13 @@ by user interaction with the UI.
 	~~~c++
 	public ExpandableListAdapter(Context context, List<String> listDataHeader,
             HashMap<String, List<String>> listChildData) {
-        this._context = context;
-        this._listDataHeader = listDataHeader;
-        this._listDataChild = listChildData;
-        this._checkListParent = new ArrayList<Boolean>();
-        this._checkListChild = new HashMap<String, List<Boolean>>();
-        this._checkListParent = new ArrayList<Boolean>();
-        initCheckList(listDataHeader, listChildData);
+	        this._context = context;
+	        this._listDataHeader = listDataHeader;
+	        this._listDataChild = listChildData;
+	        this._checkListParent = new ArrayList<Boolean>();
+	        this._checkListChild = new HashMap<String, List<Boolean>>();
+	        this._checkListParent = new ArrayList<Boolean>();
+	        initCheckList(listDataHeader, listChildData);
     	}
 	~~~
 	
@@ -151,7 +150,6 @@ by user interaction with the UI.
 	        	this._checkListChild.put(listDataHeader.get(i), checklist);
 	        }
     	}
-    
 	public void cleanCheckList(){
 		// clean up all the booleans
 		String groupname;
