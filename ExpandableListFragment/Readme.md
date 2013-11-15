@@ -1,4 +1,3 @@
-
 ExpandableList with Checkbox in Android
 ------------
 
@@ -113,12 +112,11 @@ by user interaction with the UI.
 	* Member Variables
 	~~~c++
 	private Context _context;
-	
-    private List<String> _listDataHeader; // header titles
-    private HashMap<String, List<String>> _listDataChild;
-    
-    private List<Boolean> _checkListParent;
-    private HashMap<String, List<Boolean>> _checkListChild;
+	private List<String> _listDataHeader; // header titles
+	private HashMap<String, List<String>> _listDataChild;
+	    
+	private List<Boolean> _checkListParent;
+	private HashMap<String, List<Boolean>> _checkListChild;
 	~~~
 
 	* Initialization
